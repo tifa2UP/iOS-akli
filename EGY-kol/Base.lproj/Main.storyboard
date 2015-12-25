@@ -25,12 +25,17 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ebp-fC-WbN">
                                             <rect key="frame" x="14" y="10" width="578" height="59"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k4n-Ae-z9m">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k4n-Ae-z9m">
                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="59"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="59" id="6LZ-RH-dxM"/>
                                                         <constraint firstAttribute="width" constant="60" id="C5X-OT-S79"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tpX-Vx-SVz">
                                                     <rect key="frame" x="70" y="2" width="508" height="55"/>
