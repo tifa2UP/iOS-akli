@@ -67,6 +67,12 @@
                                         <constraint firstItem="Ebp-fC-WbN" firstAttribute="top" secondItem="C7A-IK-mlT" secondAttribute="topMargin" constant="2" id="zXs-Gb-ywh"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="locationLabel" destination="Mn4-2z-eBa" id="az4-zx-Duw"/>
+                                    <outlet property="nameLabel" destination="tYP-Mb-2zU" id="nMh-CD-Jrs"/>
+                                    <outlet property="thumbnailImageView" destination="k4n-Ae-z9m" id="sp6-vu-Gjh"/>
+                                    <outlet property="typeLabel" destination="ztP-gd-Jtl" id="Tht-ae-Uuy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
