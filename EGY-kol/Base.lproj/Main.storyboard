@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Feed-->
@@ -21,28 +22,32 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ebp-fC-WbN">
-                                            <rect key="frame" x="20" y="0.0" width="139" height="69"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ebp-fC-WbN">
+                                            <rect key="frame" x="14" y="10" width="578" height="59"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4n-Ae-z9m">
-                                                    <rect key="frame" x="0.0" y="0.0" width="74" height="69"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k4n-Ae-z9m">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="59"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="59" id="6LZ-RH-dxM"/>
+                                                        <constraint firstAttribute="width" constant="60" id="C5X-OT-S79"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tpX-Vx-SVz">
-                                                    <rect key="frame" x="84" y="7" width="55" height="55"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tpX-Vx-SVz">
+                                                    <rect key="frame" x="70" y="2" width="508" height="55"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYP-Mb-2zU">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYP-Mb-2zU">
                                                             <rect key="frame" x="0.0" y="0.0" width="45" height="20"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mn4-2z-eBa">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mn4-2z-eBa">
                                                             <rect key="frame" x="0.0" y="21" width="55" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztP-gd-Jtl">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztP-gd-Jtl">
                                                             <rect key="frame" x="0.0" y="39" width="30" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -53,6 +58,14 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ebp-fC-WbN" firstAttribute="leading" secondItem="C7A-IK-mlT" secondAttribute="leadingMargin" constant="6" id="A6e-Sx-uTl"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Ebp-fC-WbN" secondAttribute="bottom" constant="1.5" id="GqA-LA-ln8"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Ebp-fC-WbN" secondAttribute="trailing" id="dY0-Nt-wK6"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Ebp-fC-WbN" secondAttribute="bottom" constant="1.5" id="eJ4-Fi-Mcz"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Ebp-fC-WbN" secondAttribute="bottom" constant="2" id="iCa-6i-Ewr"/>
+                                        <constraint firstItem="Ebp-fC-WbN" firstAttribute="top" secondItem="C7A-IK-mlT" secondAttribute="topMargin" constant="2" id="zXs-Gb-ywh"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
