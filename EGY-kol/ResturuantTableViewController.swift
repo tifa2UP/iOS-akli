@@ -103,7 +103,19 @@ class ResturuantTableViewController: UITableViewController {
         let callAction = UIAlertAction(title: "Call " + "123-000-\(indexPath.row)",
             style: UIAlertActionStyle.Default, handler: callActionHandler)
         optionMenu.addAction(callAction)
+            
+            if (self.restaurantIsVisited[indexPath.row]){
+        let isVisitedAction = UIAlertAction(title: "I've not been here", style: .Default,
+        handler: {
+        (action:UIAlertAction!) -> Void in
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        cell?.accessoryType = .None
+        self.restaurantIsVisited[indexPath.row] = false
+        })
+        optionMenu.addAction(isVisitedAction)
+            }
         
+        else{
         let isVisitedAction = UIAlertAction(title: "I've been here", style: .Default,
             handler: {
             (action:UIAlertAction!) -> Void in
@@ -112,10 +124,10 @@ class ResturuantTableViewController: UITableViewController {
             self.restaurantIsVisited[indexPath.row] = true
             })
         optionMenu.addAction(isVisitedAction)
+            }
         
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
             
-            //TODO: uncheck the visited button
     }
 
     /*
