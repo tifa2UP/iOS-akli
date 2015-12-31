@@ -11,11 +11,19 @@ import UIKit
 class RestaurantDetailViewController: UIViewController {
     
     @IBOutlet var restaurantImageView:UIImageView!
+    @IBOutlet var locationLabel:UILabel!
+    @IBOutlet var typeLabel:UILabel!
+    
+    var locationText = ""
+    var typeText = ""
+
     var restaurantImage = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
     restaurantImageView.image = UIImage(named: restaurantImage)
+        locationLabel.text = locationText
+        typeLabel.text = typeText
         // Do any additional setup after loading the view.
     }
 
