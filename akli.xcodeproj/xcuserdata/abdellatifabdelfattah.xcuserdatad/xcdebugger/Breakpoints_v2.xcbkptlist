@@ -211,7 +211,7 @@
                   moduleName = "akli"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abdellatifabdelfattah/Desktop/EGY-kol/EGY-kol/RestarauntDetailTableViewCell.swift"
-                  timestampString = "473283440.888829"
+                  timestampString = "473328445.222989"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -226,7 +226,7 @@
                   moduleName = "akli"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abdellatifabdelfattah/Desktop/EGY-kol/EGY-kol/RestarauntDetailTableViewCell.swift"
-                  timestampString = "473283440.889047"
+                  timestampString = "473328445.223148"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -239,15 +239,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EGY-kol/RestaurantDetailViewController.swift"
-            timestampString = "473283434.960159"
+            timestampString = "473328444.207709"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EGY-kol/RestaurantDetailViewController.swift"
+            timestampString = "473328444.207709"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>

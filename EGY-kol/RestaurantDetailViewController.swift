@@ -10,6 +10,7 @@ import UIKit
 
 class RestaurantDetailViewController: UIViewController {
     
+    @IBOutlet var tableView:UITableView!
     @IBOutlet var restaurantImageView:UIImageView!
 //    @IBOutlet var restaurantName: UILabel!
 //    @IBOutlet var locationLabel:UILabel!
@@ -20,11 +21,18 @@ class RestaurantDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         restaurantImageView.image = UIImage(named: restaurant.image)
-//        locationLabel.text = restaurant.location
-//        typeLabel.text = restaurant.type
-//        restaurantName.text = restaurant.name
-        
-        // Do any additional setup after loading the view.
+        tableView.backgroundColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.2)
+        tableView.tableFooterView = UIView(frame: CGRectZero)
+        tableView.separatorColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.8)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 242.0/255.0, green: 116.0/255.0, blue: 119.0/255.0, alpha: 1.0)
+        if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
+            UINavigationBar.appearance().titleTextAttributes =
+            [NSForegroundColorAttributeName:UIColor.whiteColor(),
+            NSFontAttributeName:barFont]
+        }
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        title = restaurant.name
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +49,7 @@ class RestaurantDetailViewController: UIViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell",
         forIndexPath: indexPath) as! RestarauntDetailTableViewCell
         // Configure the cell...
+            cell.backgroundColor = UIColor.clearColor()
         switch indexPath.row {
     case 0:
         cell.fieldLabel.text = "Name"
@@ -60,6 +69,7 @@ class RestaurantDetailViewController: UIViewController {
         }
         return cell
     }
+    
     
 
     /*
