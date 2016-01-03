@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSFontAttributeName:barFont]
         }
         // Override point for customization after application launch.
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         return true
     }
 

@@ -33,6 +33,9 @@ class RestaurantDetailViewController: UIViewController {
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
         title = restaurant.name
+        navigationController?.hidesBarsOnSwipe = false
+        navigationController?.setNavigationBarHidden(false, animated: true) 
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,7 +45,7 @@ class RestaurantDetailViewController: UIViewController {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int)
         -> Int {
-        return 4 }
+        return 5 }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:
         NSIndexPath) -> UITableViewCell {
@@ -61,6 +64,9 @@ class RestaurantDetailViewController: UIViewController {
         cell.fieldLabel.text = "Location"
     cell.valueLabel.text = restaurant.location
     case 3:
+            cell.fieldLabel.text = "Phone number"
+            cell.valueLabel.text = restaurant.name
+    case 4:
         cell.fieldLabel.text = "Been here"
     cell.valueLabel.text = (restaurant.isVisited) ? "Yes, I've been here before" : "No"
     default:
