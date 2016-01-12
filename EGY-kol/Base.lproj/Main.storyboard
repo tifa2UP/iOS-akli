@@ -67,8 +67,10 @@
                                     <constraints>
                                         <constraint firstItem="Ebp-fC-WbN" firstAttribute="leading" secondItem="C7A-IK-mlT" secondAttribute="leadingMargin" constant="6" id="A6e-Sx-uTl"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Ebp-fC-WbN" secondAttribute="bottom" constant="1.5" id="GqA-LA-ln8"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="tpX-Vx-SVz" secondAttribute="bottom" constant="4" id="bkU-x5-toD"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Ebp-fC-WbN" secondAttribute="trailing" id="dY0-Nt-wK6"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Ebp-fC-WbN" secondAttribute="bottom" constant="1.5" id="eJ4-Fi-Mcz"/>
+                                        <constraint firstItem="tpX-Vx-SVz" firstAttribute="top" secondItem="C7A-IK-mlT" secondAttribute="topMargin" constant="4" id="fgC-14-wsl"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Ebp-fC-WbN" secondAttribute="bottom" constant="2" id="iCa-6i-Ewr"/>
                                         <constraint firstItem="Ebp-fC-WbN" firstAttribute="top" secondItem="C7A-IK-mlT" secondAttribute="topMargin" constant="2" id="zXs-Gb-ywh"/>
                                     </constraints>
@@ -129,7 +131,7 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asF-Ha-Dbg">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asF-Ha-Dbg">
                                                             <rect key="frame" x="195" y="0.0" width="389" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -144,7 +146,9 @@
                                             <constraints>
                                                 <constraint firstItem="Exe-Jm-U2I" firstAttribute="leading" secondItem="H2u-HU-DNW" secondAttribute="leadingMargin" id="0Ww-c6-5lR"/>
                                                 <constraint firstItem="Exe-Jm-U2I" firstAttribute="centerY" secondItem="H2u-HU-DNW" secondAttribute="centerY" id="6yW-Qg-Ehg"/>
+                                                <constraint firstItem="Exe-Jm-U2I" firstAttribute="top" secondItem="H2u-HU-DNW" secondAttribute="topMargin" constant="-1" id="Hvx-6b-7Gi"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Exe-Jm-U2I" secondAttribute="trailing" id="LD6-6Y-Qiw"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Exe-Jm-U2I" secondAttribute="bottom" constant="-1" id="ag2-3C-9kS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

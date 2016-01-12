@@ -34,7 +34,9 @@ class RestaurantDetailViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
         title = restaurant.name
         navigationController?.hidesBarsOnSwipe = false
-        navigationController?.setNavigationBarHidden(false, animated: true) 
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        tableView.estimatedRowHeight = 36
+        tableView.rowHeight = UITableViewAutomaticDimension
         
     }
 
@@ -65,7 +67,7 @@ class RestaurantDetailViewController: UIViewController {
     cell.valueLabel.text = restaurant.location
     case 3:
             cell.fieldLabel.text = "Phone number"
-            cell.valueLabel.text = restaurant.name
+            cell.valueLabel.text = restaurant.phoneNumber
     case 4:
         cell.fieldLabel.text = "Been here"
     cell.valueLabel.text = (restaurant.isVisited) ? "Yes, I've been here before" : "No"

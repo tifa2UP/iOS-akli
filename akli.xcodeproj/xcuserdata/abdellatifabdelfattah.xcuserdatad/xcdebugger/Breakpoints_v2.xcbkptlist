@@ -243,11 +243,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EGY-kol/RestaurantDetailViewController.swift"
-            timestampString = "473525345.235487"
+            timestampString = "474278901.600268"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -259,11 +259,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EGY-kol/RestaurantDetailViewController.swift"
-            timestampString = "473525945.885938"
+            timestampString = "474278901.600268"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
