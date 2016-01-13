@@ -12,9 +12,9 @@ class RestaurantDetailViewController: UIViewController {
     
     @IBOutlet var tableView:UITableView!
     @IBOutlet var restaurantImageView:UIImageView!
-//    @IBOutlet var restaurantName: UILabel!
-//    @IBOutlet var locationLabel:UILabel!
-//    @IBOutlet var typeLabel:UILabel!
+    @IBOutlet var ratingButton:UIButton!
+
+
     
     var restaurant:Restaurant!
     
