@@ -216,10 +216,10 @@
             </objects>
             <point key="canvasLocation" x="2098" y="447"/>
         </scene>
-        <!--View Controller-->
+        <!--Review View Controller-->
         <scene sceneID="IDP-LJ-ZVV">
             <objects>
-                <viewController id="7v6-OZ-pfz" sceneMemberID="viewController">
+                <viewController id="7v6-OZ-pfz" customClass="ReviewViewController" customModule="akli" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ea1-Md-qOW"/>
                         <viewControllerLayoutGuide type="bottom" id="Vhc-89-gsv"/>
@@ -231,15 +231,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrafina" translatesAutoresizingMaskIntoConstraints="NO" id="trD-L1-eCl">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate your experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zb5-An-vW6">
-                                <rect key="frame" x="162" y="133" width="288" height="81"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="288" id="tRi-tk-4Ul"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rpl-vH-StB">
                                 <rect key="frame" x="185" y="222" width="230" height="70"/>
                                 <subviews>
@@ -301,6 +292,15 @@
                                     <segue destination="S7d-ng-9ED" kind="unwind" unwindAction="close:" id="h7S-vq-mEQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate your experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zb5-An-vW6">
+                                <rect key="frame" x="162" y="133" width="288" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="tRi-tk-4Ul"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -327,6 +327,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="trD-L1-eCl" id="esT-9P-wsJ"/>
+                        <outlet property="ratingStackView" destination="Rpl-vH-StB" id="Hzm-yA-JyP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcU-6T-hK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="S7d-ng-9ED" userLabel="Exit" sceneMemberID="exit"/>
