@@ -228,7 +228,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="trD-L1-eCl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrafina" translatesAutoresizingMaskIntoConstraints="NO" id="trD-L1-eCl">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
@@ -243,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcU-6T-hK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2733" y="454"/>
+            <point key="canvasLocation" x="2788" y="447"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dyw-Uy-UCR">
@@ -265,6 +265,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="barrafina" width="640" height="640"/>
         <image name="rating" width="256" height="256"/>
     </resources>
 </document>
