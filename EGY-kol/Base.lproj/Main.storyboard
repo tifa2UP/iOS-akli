@@ -162,14 +162,50 @@
                                     <outlet property="delegate" destination="BB4-f9-2dA" id="6EY-LN-u4g"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpf-uk-Ara">
+                                <rect key="frame" x="523" y="94" width="40" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ROD-qj-guM"/>
+                                    <constraint firstAttribute="height" constant="40" id="cIK-gB-vSw"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Test" image="rating"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="7v6-OZ-pfz" kind="showDetail" action="showViewController:sender:" id="V19-xF-Ixk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Cpf-uk-Ara" firstAttribute="leading" secondItem="dik-c6-BH8" secondAttribute="leading" constant="523" id="AvO-3B-mMz"/>
+                            <constraint firstItem="Cpf-uk-Ara" firstAttribute="top" secondItem="Jav-C3-UrC" secondAttribute="bottom" constant="8" id="Chp-U0-QR6"/>
                             <constraint firstItem="JsT-Rf-J1L" firstAttribute="top" secondItem="dik-c6-BH8" secondAttribute="topMargin" id="LoH-dS-w7V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cpf-uk-Ara" secondAttribute="trailing" constant="-7" id="NaD-Ev-VNz"/>
+                            <constraint firstItem="Cpf-uk-Ara" firstAttribute="top" secondItem="Jav-C3-UrC" secondAttribute="bottom" constant="30" id="RaV-Yo-L2N"/>
                             <constraint firstItem="6m5-Ea-t9j" firstAttribute="top" secondItem="JsT-Rf-J1L" secondAttribute="bottom" id="SMh-Ty-tqY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cpf-uk-Ara" secondAttribute="trailing" constant="17" id="i2O-I6-ced"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JsT-Rf-J1L" secondAttribute="trailing" constant="-20" id="k0W-TK-quN"/>
+                            <constraint firstItem="Cpf-uk-Ara" firstAttribute="leading" secondItem="dik-c6-BH8" secondAttribute="leadingMargin" constant="527" id="mIO-Fn-ANG"/>
+                            <constraint firstItem="6m5-Ea-t9j" firstAttribute="top" secondItem="Cpf-uk-Ara" secondAttribute="bottom" constant="488" id="n2l-vt-t5l"/>
+                            <constraint firstItem="Cpf-uk-Ara" firstAttribute="top" secondItem="Jav-C3-UrC" secondAttribute="bottom" constant="30" id="smW-EX-oH2"/>
                             <constraint firstItem="JsT-Rf-J1L" firstAttribute="leading" secondItem="dik-c6-BH8" secondAttribute="leadingMargin" constant="-20" id="zDB-hD-Uzj"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AvO-3B-mMz"/>
+                                <exclude reference="Chp-U0-QR6"/>
+                                <exclude reference="NaD-Ev-VNz"/>
+                                <exclude reference="mIO-Fn-ANG"/>
+                                <exclude reference="smW-EX-oH2"/>
+                                <exclude reference="n2l-vt-t5l"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="restaurantImageView" destination="A7Z-3Q-3i6" id="WEc-s7-nSP"/>
@@ -179,6 +215,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDP-0B-php" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2098" y="447"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IDP-LJ-ZVV">
+            <objects>
+                <viewController id="7v6-OZ-pfz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ea1-Md-qOW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vhc-89-gsv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qKA-3B-eB0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="trD-L1-eCl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="trD-L1-eCl" firstAttribute="bottom" secondItem="Vhc-89-gsv" secondAttribute="top" id="14m-vt-TRX"/>
+                            <constraint firstAttribute="trailing" secondItem="trD-L1-eCl" secondAttribute="trailing" id="aQF-5q-3KQ"/>
+                            <constraint firstItem="trD-L1-eCl" firstAttribute="leading" secondItem="qKA-3B-eB0" secondAttribute="leading" id="l8J-tw-v2N"/>
+                            <constraint firstItem="trD-L1-eCl" firstAttribute="top" secondItem="qKA-3B-eB0" secondAttribute="top" id="wgA-wT-Bwd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcU-6T-hK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2733" y="454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dyw-Uy-UCR">
@@ -199,4 +264,7 @@
             <point key="canvasLocation" x="549" y="447"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rating" width="256" height="256"/>
+    </resources>
 </document>

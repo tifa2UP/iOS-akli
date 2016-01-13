@@ -13,6 +13,6 @@ class RestarauntDetailTableViewCell: UITableViewCell {
     @IBOutlet var fieldLabel:UILabel!
     @IBOutlet var valueLabel:UILabel!
     
-    //test UIkit
 
 }
+		
