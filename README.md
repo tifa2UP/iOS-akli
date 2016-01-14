@@ -5,10 +5,12 @@
 
 ## Features: 
 *  Optimized for *all* iphone models with iOS 9.x in **vertical** as well as **horizontal** orientation
-*  Implemented  *Swipe-To-Delete" action for users to delete a restaurant entry
+*  Implemented  *"Swipe-To-Delete"* action for users to delete a restaurant entry
 *  Users could share a restaurant through *Facebook*, *Twitter* or *e-mail* 
 *  Implemented *Self-sizing Cells* to adapt for different *Accessibility sizes* and support **Dynamic Cells**
-* //TODO: Complete the list
+*  Incorportated parts of the UI with *background blur* and *icon animations* 
+*  //TODO: Complete the list
+
 
 
 ## Screenshots: 
