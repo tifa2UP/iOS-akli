@@ -37,7 +37,7 @@ class RestaurantDetailViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: true)
         tableView.estimatedRowHeight = 36
         tableView.rowHeight = UITableViewAutomaticDimension
-        
+        //TODO: save the rating button
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,7 +79,14 @@ class RestaurantDetailViewController: UIViewController {
     }
     
     @IBAction func close(segue:UIStoryboardSegue) {
+        if let reviewViewController = segue.sourceViewController as?
+        ReviewViewController {
+        if let rating = reviewViewController.rating {
+        ratingButton.setImage(UIImage(named: rating), forState:
+        UIControlState.Normal)
+        } }
     }
+
 
     /*
     // MARK: - Navigation

@@ -42,6 +42,13 @@ class ReviewViewController: UIViewController {
     }
     
     @IBAction func ratingSelected(sender: UIButton) {
+        switch (sender.tag) {
+        case 100: rating = "dislike"
+        case 200: rating = "good"
+        case 300: rating = "great"
+        default: break
+        }
+        performSegueWithIdentifier("unwindToDetailView", sender: sender)
     }
     
     /*
