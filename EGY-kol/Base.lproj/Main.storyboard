@@ -180,11 +180,25 @@
                                     <segue destination="7v6-OZ-pfz" kind="presentation" identifier="showReview" id="V19-xF-Ixk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfa-MV-uHU">
+                                <rect key="frame" x="540" y="130" width="40" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.015390131693049813" blue="0.0039095472140333598" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="88D-ye-5TV"/>
+                                    <constraint firstAttribute="width" constant="40" id="cKt-Ga-fqh"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="map"/>
+                                <connections>
+                                    <segue destination="wal-us-a0H" kind="show" identifier="showMap" id="6wS-bB-6d8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Cpf-uk-Ara" firstAttribute="leading" secondItem="dik-c6-BH8" secondAttribute="leading" constant="523" id="AvO-3B-mMz"/>
                             <constraint firstItem="Cpf-uk-Ara" firstAttribute="top" secondItem="Jav-C3-UrC" secondAttribute="bottom" constant="8" id="Chp-U0-QR6"/>
+                            <constraint firstItem="jfa-MV-uHU" firstAttribute="top" secondItem="Cpf-uk-Ara" secondAttribute="bottom" constant="18" id="JKj-dw-b6a"/>
                             <constraint firstItem="JsT-Rf-J1L" firstAttribute="top" secondItem="dik-c6-BH8" secondAttribute="topMargin" id="LoH-dS-w7V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cpf-uk-Ara" secondAttribute="trailing" constant="-7" id="NaD-Ev-VNz"/>
                             <constraint firstItem="Cpf-uk-Ara" firstAttribute="top" secondItem="Jav-C3-UrC" secondAttribute="bottom" constant="8" id="RaV-Yo-L2N"/>
@@ -193,6 +207,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="JsT-Rf-J1L" secondAttribute="trailing" constant="-20" id="k0W-TK-quN"/>
                             <constraint firstItem="Cpf-uk-Ara" firstAttribute="leading" secondItem="dik-c6-BH8" secondAttribute="leadingMargin" constant="527" id="mIO-Fn-ANG"/>
                             <constraint firstItem="6m5-Ea-t9j" firstAttribute="top" secondItem="Cpf-uk-Ara" secondAttribute="bottom" constant="488" id="n2l-vt-t5l"/>
+                            <constraint firstItem="jfa-MV-uHU" firstAttribute="centerX" secondItem="Cpf-uk-Ara" secondAttribute="centerX" id="sVL-fs-WGU"/>
                             <constraint firstItem="Cpf-uk-Ara" firstAttribute="top" secondItem="Jav-C3-UrC" secondAttribute="bottom" constant="30" id="smW-EX-oH2"/>
                             <constraint firstItem="JsT-Rf-J1L" firstAttribute="leading" secondItem="dik-c6-BH8" secondAttribute="leadingMargin" constant="-20" id="zDB-hD-Uzj"/>
                         </constraints>
@@ -216,6 +231,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDP-0B-php" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2098" y="447"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oGh-Jf-8uU">
+            <objects>
+                <viewController id="wal-us-a0H" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WP4-SG-pPZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="RLr-56-H1f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dBc-au-j37">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="osN-iq-IlM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="osN-iq-IlM" secondAttribute="trailing" id="Dtg-iX-ELP"/>
+                            <constraint firstItem="osN-iq-IlM" firstAttribute="bottom" secondItem="RLr-56-H1f" secondAttribute="top" id="Lwd-YO-kjS"/>
+                            <constraint firstItem="osN-iq-IlM" firstAttribute="top" secondItem="dBc-au-j37" secondAttribute="top" id="Okk-HU-crW"/>
+                            <constraint firstItem="osN-iq-IlM" firstAttribute="leading" secondItem="dBc-au-j37" secondAttribute="leading" id="owK-bS-Scm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VaW-54-ArO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2843" y="736"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="IDP-LJ-ZVV">
@@ -345,7 +389,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcU-6T-hK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="S7d-ng-9ED" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2788" y="447"/>
+            <point key="canvasLocation" x="2805" y="-124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dyw-Uy-UCR">
@@ -372,6 +416,7 @@
         <image name="dislike" width="84" height="84"/>
         <image name="good" width="256" height="256"/>
         <image name="great" width="256" height="256"/>
+        <image name="map" width="48" height="48"/>
         <image name="rating" width="256" height="256"/>
     </resources>
 </document>
