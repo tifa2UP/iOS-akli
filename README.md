@@ -8,8 +8,8 @@
 *  Implemented  *"Swipe-To-Delete"* action for users to delete a restaurant entry
 *  Users could share a restaurant through *Facebook*, *Twitter* or *e-mail* 
 *  Implemented *Self-sizing Cells* to adapt for different *Accessibility sizes* and support **Dynamic Cells**
-*  Added *spring* and *slide-up* **animations** to improve the UI
-*  Used *geocoding* and *reverse-geocdding* to **navigate** between the user's location and a restaurant's address
+*  Added *spring* and *slide-up* animations to improve the UI
+*  Used *geocoding* and *reverse-geocdding* to navigate between the user's location and a restaurant's address
 *  Customized Map *annotations* to make it more accessible to the users
 *  //TODO: Complete the list
 
