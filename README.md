@@ -18,7 +18,10 @@
 ## Screenshots: 
 (main feed)
 
-![alt tag](https://cloud.githubusercontent.com/assets/11590314/12259154/2a813b3c-b92d-11e5-9761-b50fa1f35153.png =20x30)
+![alt tag](https://cloud.githubusercontent.com/assets/11590314/12259154/2a813b3c-b92d-11e5-9761-b50fa1f35153.png )
+{
+width: 200px;
+}
 
 (detailed view)
 
