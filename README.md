@@ -18,7 +18,7 @@
 ## Screenshots: 
 (main feed)
 
-![alt tag](https://cloud.githubusercontent.com/assets/11590314/12259154/2a813b3c-b92d-11e5-9761-b50fa1f35153.png)
+![alt tag](https://cloud.githubusercontent.com/assets/11590314/12259154/2a813b3c-b92d-11e5-9761-b50fa1f35153.png =300x300)
 
 (detailed view)
 
