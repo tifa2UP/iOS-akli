@@ -18,7 +18,7 @@
 ## Screenshots: 
 (main feed)
 
-<img src="https://cloud.githubusercontent.com/assets/11590314/12259154/2a813b3c-b92d-11e5-9761-b50fa1f35153.png" style="width:20px; height:20px">
+<img src="https://cloud.githubusercontent.com/assets/11590314/12259154/2a813b3c-b92d-11e5-9761-b50fa1f35153.png" style="width:20px;height:20px">
 
 (detailed view)
 
