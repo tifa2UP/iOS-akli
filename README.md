@@ -11,8 +11,6 @@
 *  Added *spring* and *slide-up* animations to improve the UI
 *  Used *geocoding* and *reverse-geocdding* to navigate between the user's location and a restaurant's address
 *  Customized Map *annotations* to make it more accessible to the users
-*  //TODO: Complete the list
-
 
 
 ## Screenshots: 
