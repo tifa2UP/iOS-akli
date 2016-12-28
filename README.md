@@ -1,4 +1,4 @@
-# Akly
+# Akli
 
 #### An iOS app that allows users to save their favorite restaurants, contact them through the app directly and navigate to them using Apple Maps API. A big portion of this app is created using a tutorial by [*AppCoda*](https://www.appcoda.com/) (It's awesome! Check them out)
 
